@@ -1,0 +1,129 @@
+@import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    font-family: var(--font-alternative);
+    background-color: whitesmoke;
+}
+
+button {
+    border: none;
+    padding: .5rem 1rem;
+    font-size: var(--font-size-md);
+    text-transform: uppercase;
+    font-family: var(--font-alternative);
+    font-weight: 700;
+    border-radius: .35rem;
+    align-self: flex-end;
+}
+
+h1 {
+    font-family: var(--font-primary);
+}
+
+.caja {
+    width: min(80%, 1200px);
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .35rem;
+}
+
+/* ---------- CAJA UNO ---------- */
+
+.caja.uno {
+    background-color: var(--color-primary-Base);
+    color: var(--color-primary-A);
+}
+
+.caja.uno button {
+    background-color: var(--color-accent-Base);
+    color: var(--color-primary-Base);
+}
+
+/* ---------- CAJA DOS ---------- */
+
+.caja.dos {
+    background-color: var(--color-auxiliary-B);
+    color: var(--color-auxiliary-D);
+}
+
+.caja.dos button {
+    background-color: var(--color-auxiliary-A);
+    color: var(--color-auxiliary-D);
+    border: 1px solid var(--color-auxiliary-D);
+}
+
+/* ---------- CAJA TRES ---------- */
+
+.caja.tres {
+    background-color: var(--color-accent-Base);
+    color: var(--color-primary-D);
+}
+
+.caja.tres button {
+    background-color: var(--color-auxiliary-A);
+    color: var(--color-primary-C);
+}
+
+/* ---------- CAJA CUATRO ---------- */
+
+.caja.cuatro {
+    background-color: var(--color-primary-A);
+    color: var(--color-primary-D);
+}
+
+.caja.cuatro button {
+    background-color: var(--color-accent-Base);
+    color: var(--color-primary-Base);
+}
+
+/* ---------- CAJA CINCO ---------- */
+
+.caja.cinco {
+    background-color: var(--color-primary-B);
+    color: var(--color-secondary-A);
+}
+
+.caja.cinco button {
+    background-color: var(--color-accent-Base);
+    color: var(--color-primary-C);
+    border: 1px solid var(--color-primary-C);
+}
+
+/* ---------- CAJA SEIS ---------- */
+
+.caja.seis {
+    background-color: var(--color-primary-Base);
+    color: var(--color-primary-A);
+}
+
+.caja.seis button {
+    background-color: var(--color-primary-Base);
+    color: var(--color-auxiliary-Base);
+    border: 2px solid var(--color-auxiliary-Base);
+}
+
+
+/* OVERLAY.HTML */
+
+.overlay {
+    background-image: var(--color-gradient-primary-d_to_alternative-a), url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .caja.dos {
+    box-shadow: 10px 21px 108px -16px rgba(0, 0, 0, 0.72);
+}
+
+::selection {
+    background-color: var(--color-accent-Base);
+    color: var(--color-primary-C);
+}

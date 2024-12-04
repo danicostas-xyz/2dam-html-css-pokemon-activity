@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* COLOURS */
+
+    /* Primary Color Shades */
+    --color-primary-A: #dbe1f0; 
+    --color-primary-B: #3f4450; 
+    --color-primary-Base: #0F1219; 
+    --color-primary-C: #04070D; 
+    --color-primary-D: #000104; 
+
+    /* Secondary Color Shades */
+    --color-secondary-A: #FFFFFF;
+    --color-secondary-B: #FEFDFD;
+    --color-secondary-Base: #EAD5E0;
+    --color-secondary-C: #C190A9;
+    --color-secondary-D: #B24880;
+
+    /* Accent Color Shades */
+    --color-accent-A: #FFFFFF;
+    --color-accent-B: #FFFFFF;
+    --color-accent-Base: #f696ab;
+    --color-accent-C: #e5385e;
+    --color-accent-D: #510112;
+
+    /* Auxiliary Color Shades */
+    --color-auxiliary-A: #FFFFFF;
+    --color-auxiliary-B: #FFF3A1;
+    --color-auxiliary-Base: #E6D243;
+    --color-auxiliary-C: #605400;
+    --color-auxiliary-D: #030300;
+
+
+    /* COLOUR GRADIENTS */
+
+
+
+    /* TYPEFACES */
+
+    /* Font Properties (Family & Scale) */
+    --font-primary: "Bree Serif", serif;
+    --font-alternative: "Roboto Slab", serif;
+    
+    --font-size-xs: 0.69rem; /*p.note*/
+    --font-size-sm: 0.83rem; /*p.caption*/
+    --font-size-md: 1rem; /*p*/ 
+    --font-size-lg: 1.2rem; /*h5*/
+    --font-size-xl: 1.44rem; /*h4*/
+    --font-size-2xl: 1.73rem; /*h3*/
+    --font-size-3xl: 2.07rem; /*h2*/
+    --font-size-4xl: 2.49rem; /*h1*/
+
+
+
+    /* SPACINGS */
+
+
+
+}
