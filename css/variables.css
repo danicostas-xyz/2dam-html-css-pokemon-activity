@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&family=Prosto+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,60 +8,75 @@
 
 :root {
 
-    /* COLOURS */
+    /* --------- COLORS --------- */
 
     /* Primary Color Shades */
-    --color-primary-A: #dbe1f0; 
-    --color-primary-B: #3f4450; 
-    --color-primary-Base: #0F1219; 
-    --color-primary-C: #04070D; 
-    --color-primary-D: #000104; 
+    --color-primary-A: #FFFDF2; 
+    --color-primary-B: #797977; 
+    --color-primary-Base: #1a1a1a; 
+    --color-primary-C: #010101; 
+    --color-primary-D: #020200; 
 
     /* Secondary Color Shades */
     --color-secondary-A: #FFFFFF;
-    --color-secondary-B: #FEFDFD;
-    --color-secondary-Base: #EAD5E0;
-    --color-secondary-C: #C190A9;
-    --color-secondary-D: #B24880;
+    --color-secondary-B: #FFFFFF;
+    --color-secondary-Base: #F6F4F3;
+    --color-secondary-C: #999390;
+    --color-secondary-D: #806C62; 
 
     /* Accent Color Shades */
     --color-accent-A: #FFFFFF;
-    --color-accent-B: #FFFFFF;
-    --color-accent-Base: #f696ab;
-    --color-accent-C: #e5385e;
-    --color-accent-D: #510112;
+    --color-accent-B: #99FDBB;
+    --color-accent-Base: #16f962;
+    --color-accent-C: #009733;
+    --color-accent-D: #00240C;
 
     /* Auxiliary Color Shades */
     --color-auxiliary-A: #FFFFFF;
-    --color-auxiliary-B: #FFF3A1;
-    --color-auxiliary-Base: #E6D243;
-    --color-auxiliary-C: #605400;
-    --color-auxiliary-D: #030300;
+    --color-auxiliary-B: #FB879B;
+    --color-auxiliary-Base: #F21B42;
+    --color-auxiliary-C: #760015;
+    --color-auxiliary-D: #0E0002;
 
 
-    /* COLOUR GRADIENTS */
+    /* --------- COLOR GRADIENTS --------- */
 
+    --colour-gradient-overlay: linear-gradient(
+        45deg,
+        #000000ff 0%,
+        #060604ff 14%,
+        #0b0b09ff 29%,
+        #10100fff 43%,
+        #121211ff 57%,
+        #151514ff 71%,
+        #171717ff 86%,
+        #1a1a1aff 100%
+      );
+    --colour-gradient-heading: none;
 
-
-    /* TYPEFACES */
+    /* --------- TYPEFACES --------- */
 
     /* Font Properties (Family & Scale) */
-    --font-primary: "Bree Serif", serif;
-    --font-alternative: "Roboto Slab", serif;
+    --font-headings: "Prosto One", sans-serif;
+    --font-texts: "Numans", sans-serif;
+
+    --line-height: 1.5;
     
-    --font-size-xs: 0.69rem; /*p.note*/
-    --font-size-sm: 0.83rem; /*p.caption*/
-    --font-size-md: 1rem; /*p*/ 
-    --font-size-lg: 1.2rem; /*h5*/
-    --font-size-xl: 1.44rem; /*h4*/
-    --font-size-2xl: 1.73rem; /*h3*/
-    --font-size-3xl: 2.07rem; /*h2*/
-    --font-size-4xl: 2.49rem; /*h1*/
-
-
+    --font-size-sm: clamp(0.8rem, 0.13vi + 0.77rem, 0.89rem); /* p.note */
+    --font-size-base: clamp(1rem, 0.27vi + 0.95rem, 1.19rem); /* p */
+    --font-size-md: clamp(1.25rem, 0.47vi + 1.16rem, 1.58rem); /* h5 */
+    --font-size-lg: clamp(1.56rem, 0.77vi + 1.41rem, 2.1rem); /* h4 */
+    --font-size-xl: clamp(1.95rem, 1.2vi + 1.71rem, 2.79rem); /* h3 */
+    --font-size-xxl: clamp(2.44rem, 1.82vi + 2.08rem, 3.72rem); /* h2 */
+    --font-size-xxxl: clamp(3.05rem, 2.7vi + 2.51rem, 4.94rem); /* h1 */
 
     /* SPACINGS */
 
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
 
 
 }

@@ -1,3 +1,19 @@
 @import url(variables.css);
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100..900&display=swap');
 
+body {
+    height: 100dvh;
+    background-image: var(--colour-gradient-overlay);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.trainer-card {
+    width: 1200px;
+    height: 850px;
+    border: 2px solid var(--color-accent-Base); 
+    border-radius: 24px;
+}
