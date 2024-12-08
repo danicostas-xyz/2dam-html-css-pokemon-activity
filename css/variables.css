@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Numans&family=Prosto+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Numans&family=Prosto+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Russo+One&display=swap');
 
 * {
     margin: 0;
@@ -45,12 +46,12 @@
         45deg,
         #000000ff 0%,
         #060604ff 14%,
-        #0b0b09ff 29%,
-        #10100fff 43%,
-        #121211ff 57%,
-        #151514ff 71%,
-        #171717ff 86%,
-        #1a1a1aff 100%
+        #0b0b09dd 29%,
+        #10100fdd 43%,
+        #121211dd 57%,
+        #151514dd 71%,
+        #171717dd 86%,
+        #1a1a1a88 100%
       );
     --colour-gradient-heading: none;
 
@@ -60,7 +61,7 @@
     --font-headings: "Prosto One", sans-serif;
     --font-texts: "Numans", sans-serif;
 
-    --line-height: 1.5;
+    --line-height: 1.25;
     
     --font-size-sm: clamp(0.8rem, 0.13vi + 0.77rem, 0.89rem); /* p.note */
     --font-size-base: clamp(1rem, 0.27vi + 0.95rem, 1.19rem); /* p */
@@ -78,5 +79,7 @@
     --spacing-lg: 24px;
     --spacing-xl: 32px;
 
+    /* BORDER-RADIUS */
 
+    --border-radius: 20px;
 }
