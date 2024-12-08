@@ -42,7 +42,7 @@
 
     /* --------- COLOR GRADIENTS --------- */
 
-    --colour-gradient-overlay: linear-gradient(
+    --color-gradient-overlay: linear-gradient(
         45deg,
         #000000ff 0%,
         #060604ff 14%,
@@ -53,7 +53,8 @@
         #171717dd 86%,
         #1a1a1a88 100%
       );
-    --colour-gradient-heading: none;
+    --color-gradient-heading: none;
+    --color-gradient-shine: linear-gradient(90deg, rgba(255,255,255,0.1026611328125) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 90%, rgba(255,255,255,0.1026611328125) 100%);
 
     /* --------- TYPEFACES --------- */
 

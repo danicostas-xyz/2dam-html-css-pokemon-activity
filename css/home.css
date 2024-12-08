@@ -7,9 +7,14 @@ body {
     justify-content: center;
     align-items: center;
     line-height: var(--line-height);
-    background-image: var(--colour-gradient-overlay), url(../assets/images/background/3.jpg);
+    background-image: var(--color-gradient-overlay), url(../assets/images/background/3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+::selection {
+    color: var(--color-primary-Base);
+    background-color: var(--color-accent-Base);
 }
 
 img {
@@ -25,7 +30,7 @@ img {
     width: min(80rem, 90%);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     filter: drop-shadow(0px 0px 33px black);
 }
 
@@ -35,15 +40,27 @@ img {
     font-size: var(--font-size-xxl);
 }
 
+.trainer-card__title--sub {
+	background-color: var(--color-accent-Base);
+	color: var(--color-primary-Base);
+	padding: var(--spacing-sm) var(--spacing-xl);
+	border-radius: var(--border-radius);
+}
+
+.trainer-card__title--sub::selection {
+    background-color: var(--color-primary-Base);
+    color: var(--color-accent-Base);
+}
+
 .trainer-card__subtitle {
     font-size: var(--font-size-xl);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
 
 .trainer-card__badges-title,
 .trainer-card__contact-info {
     font-family: "Monda", serif;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
     font-weight: 700;
 }
 
@@ -52,14 +69,37 @@ img {
 }
 
 .trainer-card__header {
-    display: flex;
-    gap: var(--spacing-md);
-    justify-content: space-between;
+	display: flex;
+	gap: var(--spacing-lg);
+	justify-content: space-between;
+	align-items: center;
+}
+
+.trainer-card__pokeball {
+	width: 5rem;
+	animation: spinning 2s linear infinite;
+    transition-property: animation;
+    transition-duration: .25;
+}
+
+.trainer-card__pokeball:hover {
+    animation: spinning .2s linear infinite;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
 
 .trainer-card__wrapper {
     display: flex;
-    gap: 2rem;
+    gap: var(--spacing-lg);
     justify-content: space-between;
 }
 
@@ -83,16 +123,65 @@ img {
 .trainer-card__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: var(--spacing-lg);
     width: 75%;
 }
 
 .trainer-card__grid-element {
+    position: relative;
     overflow: hidden;
     background-image: var(--colour-gradient-overlay);
     transition-property: filter;
     transition-duration: .45s;
     transition-timing-function: cubic-bezier(.08, .44, .16, .52);
+}
+
+.trainer-card__grid-element::after {
+	content: "";
+	background-image: var(--color-gradient-shine);
+	position: absolute;
+	top: 23px;
+    left: -1111px;
+	width: 231%;
+	height: 82%;
+	transform: rotate(-45deg);
+	animation: shine 4s infinite;
+	animation-timing-function: ease-out;
+	filter: blur(23px);
+    opacity: .8;
+}
+
+.trainer-card__grid-element:nth-child(1)::after{
+    animation-delay: 2s;
+}
+.trainer-card__grid-element:nth-child(2)::after {
+    animation-delay: 10s;
+}
+.trainer-card__grid-element:nth-child(3)::after {
+    animation-delay: 0s;
+}
+.trainer-card__grid-element:nth-child(4)::after {
+    animation-delay: 25s;
+}
+.trainer-card__grid-element:nth-child(5)::after {
+    animation-delay: 5s;
+}
+.trainer-card__grid-element:nth-child(6)::after {
+    animation-delay: 23s;
+}
+
+@keyframes shine {
+    0% {
+        left: -1111px;
+    }
+
+    50% {
+        left: -1111px;
+    }
+
+    100% {
+        left: 1500px;
+    }
 }
 
 .trainer-card__grid-element img {
@@ -113,7 +202,9 @@ img {
 }
 
 .trainer-card__badges-list {
-    display: flex;
+	display: flex;
+	filter: drop-shadow(0px 0px 14px black);
+    margin: var(--spacing-lg) 0;
 }
 
 .trainer-card__badges-list img {
@@ -186,4 +277,13 @@ img {
     90% {
         background-position: -10% 10%
     }
+}
+
+.trainer-card__badges-title {
+    text-align: center;
+
+}
+
+.trainer-card__contact-info {
+    text-align: center;
 }
