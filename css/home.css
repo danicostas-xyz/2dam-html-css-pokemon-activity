@@ -107,6 +107,7 @@ img {
 .trainer-card__avatar {
     width: 25%;
     overflow: hidden;
+    position: relative;
 }
 
 .trainer-card__avatar,
@@ -119,6 +120,40 @@ img {
     object-fit: cover;
     object-position: center;
     height: 100%;
+}
+
+.trainer-card__avatar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../assets/images/background/glitch.gif);
+    mix-blend-mode: difference;
+    animation: glitch 15s infinite linear ;
+}
+
+@keyframes glitch {
+    0% {
+        opacity: 0.5;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    87% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .trainer-card__grid {
