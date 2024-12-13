@@ -34,6 +34,11 @@ img {
     filter: drop-shadow(0px 0px 33px black);
 }
 
+.trainer-card__header-wrap {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
 .trainer-card__title,
 .trainer-card__subtitle {
     font-family: "Russo One", serif;
