@@ -56,7 +56,7 @@ img {
     border-radius: var(--border-radius);
 }
 
-.trainer-card__title--sub::selection, .trainer-card__grid-pokemon-name::selection {
+.trainer-card__title--sub::selection, .team-card__pokemon-name::selection {
     background-color: var(--color-primary-Base);
     color: var(--color-accent-Base);
 }
@@ -68,13 +68,13 @@ img {
 
 .trainer-card__badges-title,
 .trainer-card__contact-info,
-.trainer-card__grid-pokemon-name {
+.team-card__pokemon-name {
     font-family: var(--font-texts);
     font-size: var(--font-size-md);
     font-weight: 700;
 }
 
-.trainer-card__grid-pokemon-type-overlay {
+.team-card__type-overlay {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -85,11 +85,11 @@ img {
 	opacity: 0;
 }
 
-.pokemon-team-grid__element:hover .trainer-card__grid-pokemon-type-overlay {
+.team-card:hover .team-card__type-overlay {
     opacity: 1;
 }
 
-.trainer-card__grid-pokemon-type-icon {
+.team-card__type-wrapper {
     width: 17%;
 }
 
@@ -126,18 +126,18 @@ img {
 
 }
 
-.pokemon-team-grid__element,
+.team-card,
 .trainer-card {
     border-radius: var(--border-radius);
 }
 
-.pokemon-team-grid {
+.trainer-card__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing-md);
 }
 
-.pokemon-team-grid__element {
+.team-card {
     position: relative;
     overflow: hidden;
     background-image: var(--colour-gradient-overlay);
@@ -146,19 +146,19 @@ img {
     transition-timing-function: cubic-bezier(.08, .44, .16, .52);
 }
 
-.pokemon-team-grid__element--avatar {
+.team-card--avatar {
     grid-column: 4 / 5;
     grid-row: 1 / 3;
     position: relative;
 }
 
-.pokemon-team-grid__element--avatar img {
+.team-card--avatar img {
     object-fit: cover;
     object-position: center;
     height: 100%;
 }
 
-.trainer-card__grid-pokemon-name {
+.team-card__pokemon-name {
 	position: absolute;
 	font-size: var(--font-size-md);
 	bottom: -43px;
@@ -172,24 +172,24 @@ img {
 	transition-duration: .5s;
 }
 
-.pokemon-team-grid__element:hover .trainer-card__grid-pokemon-name {
+.team-card:hover .team-card__pokemon-name {
 	bottom: 0;
 	right: 0;
 }
 
-.type-icon .cls-2 {
+.team-card__type-icon .cls-2 {
     fill: var(--color-accent-Base);
 }
 
-.type-icon .cls-1 {
+.team-card__type-icon .cls-1 {
     fill: var(--color-accent-Base);
 }
 
-.type-icon--flying .cls-1 {
+.team-card__type-icon--flying .cls-1 {
     fill: black;
 }
 
-.pokemon-team-grid__element::after {
+.team-card::after {
 	content: "";
 	background-image: var(--color-gradient-shine);
 	position: absolute;
@@ -204,22 +204,22 @@ img {
     opacity: .8;
 }
 
-.pokemon-team-grid__element:nth-child(1)::after{
+.team-card:nth-child(1)::after{
     animation-delay: 2s;
 }
-.pokemon-team-grid__element:nth-child(2)::after {
+.team-card:nth-child(2)::after {
     animation-delay: 10s;
 }
-.pokemon-team-grid__element:nth-child(3)::after {
+.team-card:nth-child(3)::after {
     animation-delay: 0s;
 }
-.pokemon-team-grid__element:nth-child(4)::after {
+.team-card:nth-child(4)::after {
     animation-delay: 25s;
 }
-.pokemon-team-grid__element:nth-child(5)::after {
+.team-card:nth-child(5)::after {
     animation-delay: 5s;
 }
-.pokemon-team-grid__element:nth-child(6)::after {
+.team-card:nth-child(6)::after {
     animation-delay: 23s;
 }
 
@@ -237,7 +237,7 @@ img {
     }
 }
 
-.pokemon-team-grid__element--avatar--avatar:after {
+.team-card--avatar:after {
     content: "";
     position: absolute;
     top: 0;
@@ -276,7 +276,7 @@ img {
     }
 }
 
-.pokemon-team-grid__element img {
+.team-card img {
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -285,11 +285,11 @@ img {
     transition-timing-function: cubic-bezier(.08, .44, .16, .52);
 }
 
-.pokemon-team-grid__element:hover {
+.team-card:hover {
     filter: drop-shadow(0px 0px 22px var(--color-auxiliary-Base));
 }
 
-.pokemon-team-grid__element:hover img{
+.team-card:hover img{
     transform: scale(1.5);
 }
 
