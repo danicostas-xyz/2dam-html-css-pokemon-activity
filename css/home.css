@@ -75,17 +75,14 @@ img {
 }
 
 .trainer-card__grid-pokemon-type-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-sm);
-    opacity: 0;
-    transition-property: opacity;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition-property: opacity;
 	transition-duration: .5s;
-    z-index: 1;
+	z-index: 1;
+	padding: .5rem;
+	opacity: 0;
 }
 
 .trainer-card__grid-element:hover .trainer-card__grid-pokemon-type-overlay {
@@ -93,7 +90,7 @@ img {
 }
 
 .trainer-card__grid-pokemon-type-icon {
-    width: 30%;
+    width: 17%;
 }
 
 .trainer-card__badges-title {
@@ -133,8 +130,6 @@ img {
 .trainer-card {
     border-radius: var(--border-radius);
 }
-
-
 
 .trainer-card__grid {
     display: grid;
@@ -180,6 +175,18 @@ img {
 .trainer-card__grid-element:hover .trainer-card__grid-pokemon-name {
 	bottom: 0;
 	right: 0;
+}
+
+.type-icon .cls-2 {
+    fill: var(--color-accent-Base);
+}
+
+.type-icon .cls-1 {
+    fill: var(--color-accent-Base);
+}
+
+.type-icon--flying .cls-1 {
+    fill: black;
 }
 
 .trainer-card__grid-element::after {
