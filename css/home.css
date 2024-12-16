@@ -2,7 +2,6 @@
 
 body {
     height: 100dvh;
-    background-image: var(--colour-gradient-overlay);
     display: flex;
     justify-content: center;
     align-items: center;
